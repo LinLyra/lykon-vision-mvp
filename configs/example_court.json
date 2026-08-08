@@ -1,0 +1,5 @@
+{
+  "image_points": [[100, 650], [1180, 650], [950, 180], [330, 180]],
+  "court_points_m": [[0.0, 0.0], [15.0, 0.0], [15.0, 14.0], [0.0, 14.0]],
+  "note": "Replace image_points using scripts/calibrate_court.py after fixing the camera."
+}

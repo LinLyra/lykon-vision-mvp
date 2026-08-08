@@ -1,0 +1,65 @@
+{
+  "court_type": "halfcourt",
+  "court_size_m": [
+    15.0,
+    14.0
+  ],
+  "image_points": [
+    [
+      519.0,
+      633.0
+    ],
+    [
+      1159.0,
+      505.0
+    ],
+    [
+      35.0,
+      480.0
+    ],
+    [
+      690.0,
+      424.0
+    ]
+  ],
+  "world_points": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      15.0,
+      0.0
+    ],
+    [
+      15.0,
+      14.0
+    ],
+    [
+      0.0,
+      14.0
+    ]
+  ],
+  "court_points_m": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      15.0,
+      0.0
+    ],
+    [
+      15.0,
+      14.0
+    ],
+    [
+      0.0,
+      14.0
+    ]
+  ],
+  "video": "data/input/1v1_15s.mp4",
+  "init_frame": 0,
+  "click_order_note": "Default: 1 left-baseline, 2 right-baseline, 3 right-midcourt, 4 left-midcourt. Origin (0,0)=left baseline corner; +X along baseline; +Y toward midcourt.",
+  "basket_note": "Basket center approx (7.5, 1.575) m on ground; rim height 3.05 m (unused in 2D)."
+}

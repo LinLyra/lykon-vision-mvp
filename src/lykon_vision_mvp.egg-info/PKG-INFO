@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: lykon-vision-mvp
+Version: 0.1.0
+Summary: Video-first basketball analytics and 3D reconstruction prototype for Lykon
+Requires-Python: <3.12,>=3.10

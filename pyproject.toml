@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lykon-vision-mvp"
+version = "0.1.0"
+description = "Video-first basketball analytics and 3D reconstruction prototype for Lykon"
+requires-python = ">=3.10,<3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]

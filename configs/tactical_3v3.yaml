@@ -1,0 +1,20 @@
+# 3v3 tactical — Hangzhou demo lightweight fixed config (no grid search)
+mode: tactical
+video:
+  pose_model: yolo11m-pose.pt
+  tracker: botsort.yaml
+  conf: 0.15
+  iou: 0.4
+  imgsz: 1280
+  max_active_players: 6
+  max_players: 6
+  max_lost_frames: 25
+  max_pose_gap: 8
+  recover_pose_gaps: true
+analytics:
+  smoothing_window: 5
+  shot_cooldown_s: 1.0
+render:
+  fps: 30
+  pseudo3d_depth_scale: 0.35
+notes: Fixed Hangzhou demo preset for 3v3. No grid search.

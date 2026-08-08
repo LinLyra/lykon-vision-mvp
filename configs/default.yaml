@@ -1,0 +1,18 @@
+video:
+  pose_model: yolo11m-pose.pt
+  tracker: botsort.yaml
+  conf: 0.20
+  iou: 0.4
+  imgsz: 960
+  max_active_players: 2
+  max_players: 2
+  max_lost_frames: 30
+  max_pose_gap: 8
+  recover_pose_gaps: true
+analytics:
+  smoothing_window: 5
+  shot_min_arm_raise_px: 30
+  shot_cooldown_s: 1.0
+render:
+  fps: 30
+  pseudo3d_depth_scale: 0.35

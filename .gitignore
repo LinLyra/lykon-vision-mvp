@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local media / pipeline artifacts (do not push)
+data/input/
+data/output/
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.pkl
+
+# External research deps (WHAM etc.)
+external/

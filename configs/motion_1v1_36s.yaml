@@ -1,0 +1,26 @@
+# 1v1 Motion Benchmark — 36s basket-pole fixed camera
+# Tracking + pose only. No court / tactics / grid search.
+mode: motion
+
+video:
+  pose_model: yolo11m-pose.pt
+  tracker: botsort.yaml
+  conf: 0.20
+  iou: 0.40
+  imgsz: 960
+  max_active_players: 2
+  max_players: 2
+  # ~2s at 60fps; persistent roster still rematches after this
+  max_lost_frames: 120
+  max_pose_gap: 12
+  recover_pose_gaps: true
+  emit_predicted: true
+
+pose_smoothing:
+  method: savgol   # savgol | one_euro | none
+  window: 5        # short window — do not over-smooth basketball motion
+
+notes: >
+  Fixed config for data/input/1v1_36s.mp4.
+  Human-init A/B required. Never spawn Player C.
+  Occlusion: keep Kalman prediction + loose rematch gate so B can recover.
